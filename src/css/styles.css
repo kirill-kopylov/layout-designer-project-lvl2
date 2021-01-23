@@ -1,0 +1,100 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.t-size-2 {
+  font-size: 24;
+}
+
+.t-size-3 {
+  font-size: 32;
+}
+
+.t-size-4 {
+  font-size: 40;
+}
+
+.t-size-5 {
+  font-size: 48;
+}
+
+.t-size-6 {
+  font-size: 56;
+}
+
+.t-size-7 {
+  font-size: 64;
+}
+
+.btn {
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #fff;
+}
+.btn-clear {
+  border: 1px solid #fff;
+  background: transparent;
+}
+.btn-green {
+  background: #34c176;
+}
+.btn-purple {
+  background: #5328a1;
+}
+
+.wrapper {
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+/*# sourceMappingURL=styles.css.map */

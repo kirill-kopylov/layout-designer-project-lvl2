@@ -84,14 +84,14 @@ body {
     box-sizing: border-box;
     border-radius: 5px;
     color: #fff;
-    &&-clear {
+    &-clear {
         border: 1px solid #fff;
         background: transparent;
     }
-    &&-green {
+    &-green {
         background: $color-green;
     }
-    &&-purple {
+    &-purple {
         background: $color-purple;
     }
 }
