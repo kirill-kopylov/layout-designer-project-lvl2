@@ -41,10 +41,17 @@ h4 {
   font-size: 18px;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  padding: 0;
+  margin: 0;
 }
 
 .t-size-2 {
@@ -76,6 +83,9 @@ body {
   box-sizing: border-box;
   border-radius: 5px;
   color: #fff;
+  flex: 1 1;
+  padding: 21px;
+  text-transform: uppercase;
 }
 .btn-clear {
   border: 1px solid #fff;
@@ -88,6 +98,18 @@ body {
   background: #5328a1;
 }
 
+.input-clear {
+  border: 2px solid #CACACA;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: transparent;
+  padding: 16px 22px 18px;
+  color: inherit;
+  font-size: 14px;
+  min-width: 270px;
+  flex: 1 1;
+}
+
 .wrapper {
   padding-right: 120px;
   padding-left: 120px;
@@ -95,6 +117,96 @@ body {
 
 .pt-100 {
   padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pb-200 {
+  padding-bottom: 200px;
+}
+
+.no-mt {
+  margin-top: 0;
+}
+
+.no-mb {
+  margin-bottom: 0;
+}
+
+.maxw-570 {
+  max-width: 570px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-0a {
+  margin: 0 auto;
+}
+
+.banner {
+  background: url("../images/banner.png") center/cover;
+}
+
+.menu {
+  font-size: 11px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+}
+.menu .logo {
+  display: flex;
+  align-items: center;
+}
+.menu .logo-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  margin: 0;
+}
+.menu ul li {
+  margin: 0 12px;
+}
+.menu .search-input {
+  background: #3c3b3d;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 10px;
+  width: 180px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 594px;
+  margin: 0 auto;
+}
+.subscribe-form .input-clear {
+  margin: 12px;
+}
+.subscribe-form .btn {
+  margin: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */

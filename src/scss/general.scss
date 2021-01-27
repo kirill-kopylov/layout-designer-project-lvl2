@@ -1,0 +1,68 @@
+.btn {
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #fff;
+    flex: 1 1;
+    padding: 21px;
+    text-transform: uppercase;
+    &-clear {
+        border: 1px solid #fff;
+        background: transparent;
+    }
+    &-green {
+        background: $color-green;
+    }
+    &-purple {
+        background: $color-purple;
+    }
+}
+.input-clear {
+    border: 2px solid #CACACA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: transparent;
+    padding: 16px 22px 18px;
+    color: inherit;
+    font-size: 14px;
+    min-width: 270px;
+    flex: 1 1;
+}
+.wrapper {
+    padding-right: 120px;
+    padding-left: 120px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pt-200 {
+    padding-top: 200px;
+}
+.pb-200 {
+    padding-bottom: 200px;
+}
+.no-mt {
+    margin-top: 0;
+}
+.no-mb {
+    margin-bottom: 0;
+}
+.maxw-570 {
+    max-width: 570px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-0a {
+    margin: 0 auto;
+}

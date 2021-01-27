@@ -1,0 +1,55 @@
+.banner {
+    background: url("../images/banner.png") center/cover;
+}
+
+.menu {
+    font-size: 11px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo-img {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-grow: 1;
+        margin: 0;
+        li {
+            margin: 0 12px;
+        }
+    }
+    .search-input {
+        background: #3c3b3d;
+        border-radius: 50px;
+        border: none;
+        padding: 5px 10px;
+        width: 180px;
+    }
+}
+
+#page-description {
+}
+.subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 594px;
+    margin: 0 auto;
+    .input-clear {
+        margin: 12px;
+    }
+    .btn {
+        margin: 12px;
+    }
+}
