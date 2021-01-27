@@ -4,7 +4,7 @@
     border-radius: 5px;
     color: #fff;
     flex: 1 1;
-    padding: 21px;
+    padding: 21px 30px;
     text-transform: uppercase;
     &-clear {
         border: 1px solid #fff;
@@ -18,7 +18,7 @@
     }
 }
 .input-clear {
-    border: 2px solid #CACACA;
+    border: 2px solid #cacaca;
     box-sizing: border-box;
     border-radius: 3px;
     background: transparent;
@@ -59,10 +59,54 @@
     color: #fff;
 }
 
+.text-orange {
+    color: $color-orange;
+}
+
 .text-center {
     text-align: center;
 }
 
 .m-0a {
     margin: 0 auto;
+}
+
+.bg-black {
+    background: $color-black;
+}
+@mixin h-gap($x) {
+    margin-right: -$x / 2;
+    margin-left: -$x / 2;
+    & > * {
+        margin-left: $x / 2;
+        margin-right: $x / 2;
+    }
+}
+@mixin v-gap($x) {
+    margin-top: -$x;
+    margin-bottom: -$x;
+    & > * {
+        margin-top: $x;
+        margin-bottom: $x;
+    }
+}
+.h-gap-50 {
+    @include h-gap(50px);
+}
+.h-gap-16 {
+    @include h-gap(16px);
+}
+.v-gap-64 {
+    @include v-gap(64px);
+}
+.flex-row-eq {
+    display: flex;
+    flex-direction: row;
+    & > * {
+        flex: 1 1;
+    }
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
 }
