@@ -16,6 +16,15 @@
     &-purple {
         background: $color-purple;
     }
+    &-red {
+        background: $color-red;
+    }
+    &-round {
+        border-radius: 2rem;
+    }
+}
+.no-tt {
+    text-transform: none;
 }
 .input-clear {
     border: 2px solid #cacaca;
@@ -45,6 +54,9 @@
 .pb-200 {
     padding-bottom: 200px;
 }
+.mr-143 {
+    margin-right: 130px;
+}
 .no-mt {
     margin-top: 0;
 }
@@ -53,6 +65,9 @@
 }
 .maxw-570 {
     max-width: 570px;
+}
+.maxw-600 {
+    max-width: 600px;
 }
 
 .text-white {
@@ -107,6 +122,14 @@
     }
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
 .row-reverse {
     flex-direction: row-reverse;
+}
+
+.j-sb {
+    justify-content: space-between;
 }
