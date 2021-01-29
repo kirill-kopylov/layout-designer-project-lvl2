@@ -1,3 +1,32 @@
+$h-gaps: 50, 24, 16, 15;
+$v-gaps: 64;
+@mixin h-gap($x) {
+    .h-gap-#{$x} {
+        margin-right: #{-$x / 2}px;
+        margin-left: #{-$x / 2}px;
+        & > * {
+            margin-left: #{$x / 2}px;
+            margin-right: #{$x / 2}px;
+        }
+    }
+}
+@mixin v-gap($x) {
+    .v-gap-#{$x} {
+        margin-top: #{-$x}px;
+        margin-bottom: #{-$x}px;
+        & > * {
+            margin-top: #{$x}px;
+            margin-bottom: #{$x}px;
+        }
+    }
+}
+@each $gap in $h-gaps {
+    @include h-gap($gap);
+}
+@each $gap in $v-gaps {
+    @include v-gap($gap);
+}
+
 .btn {
     border: none;
     box-sizing: border-box;
@@ -89,31 +118,6 @@
 .bg-black {
     background: $color-black;
 }
-@mixin h-gap($x) {
-    margin-right: -$x / 2;
-    margin-left: -$x / 2;
-    & > * {
-        margin-left: $x / 2;
-        margin-right: $x / 2;
-    }
-}
-@mixin v-gap($x) {
-    margin-top: -$x;
-    margin-bottom: -$x;
-    & > * {
-        margin-top: $x;
-        margin-bottom: $x;
-    }
-}
-.h-gap-50 {
-    @include h-gap(50px);
-}
-.h-gap-16 {
-    @include h-gap(16px);
-}
-.v-gap-64 {
-    @include v-gap(64px);
-}
 .flex-row-eq {
     display: flex;
     flex-direction: row;
@@ -132,4 +136,14 @@
 
 .j-sb {
     justify-content: space-between;
+}
+
+.inline-list {
+    & > li {
+        display: inline-block;
+    }
+}
+
+.bg-gradient {
+    background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
 }
