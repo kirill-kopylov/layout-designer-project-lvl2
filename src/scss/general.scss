@@ -7,9 +7,10 @@
     .h-gap-#{$x} {
         margin-right: #{-$x / 2}px;
         margin-left: #{-$x / 2}px;
+        overflow: hidden;
         & > * {
-            padding-left: #{$x / 2}px;
-            padding-right: #{$x / 2}px;
+            margin-left: #{$x / 2}px;
+            margin-right: #{$x / 2}px;
         }
     }
 }
@@ -17,9 +18,10 @@
     .v-gap-#{$x} {
         margin-top: #{-$x / 2}px;
         margin-bottom: #{-$x / 2}px;
+        overflow: hidden;
         & > * {
-            padding-top: #{$x / 2}px;
-            padding-bottom: #{$x / 2}px;
+            margin-top: #{$x / 2}px;
+            margin-bottom: #{$x / 2}px;
         }
     }
 }
