@@ -8,8 +8,8 @@ $color-orange: #f89202;
 $color-purple: #5328a1;
 $color-red: #95390c;
 $h-gaps: 50, 24, 16, 15, 12;
-$v-gaps: 64, 50, 12;
-$mbs: 57, 50, 16, 30, 25;
+$v-gaps: 64, 50, 25, 24, 12;
+$mbs: 57, 50, 30, 25, 18, 16, 12;
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
@@ -64,7 +64,9 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
-
+.b {
+    font-weight: bold;
+}
 body {
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -72,7 +74,7 @@ body {
     padding: 0;
     margin: 0;
     color: #fff;
-    width: 1440px;
+    width: 414px;
     position: relative;
 }
 

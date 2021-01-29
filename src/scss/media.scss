@@ -22,7 +22,13 @@
     .full-on-sm {
         & > * {
             width: 100% !important;
-            flex-basis: 100%;
+            flex-basis: 100% !important;
+        }
+    }
+    .half-on-sm {
+        & > * {
+            width: 50% !important;
+            flex-basis: 50% !important;
         }
     }
     .banner {
@@ -30,6 +36,9 @@
         p {
             margin: revert;
         }
+    }
+    .author-banner {
+        padding-top: 225px;
     }
     .posts {
         .post-title {

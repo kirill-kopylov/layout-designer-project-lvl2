@@ -8,8 +8,8 @@
         margin-right: #{-$x / 2}px;
         margin-left: #{-$x / 2}px;
         & > * {
-            margin-left: #{$x / 2}px;
-            margin-right: #{$x / 2}px;
+            padding-left: #{$x / 2}px;
+            padding-right: #{$x / 2}px;
         }
     }
 }
@@ -18,8 +18,8 @@
         margin-top: #{-$x / 2}px;
         margin-bottom: #{-$x / 2}px;
         & > * {
-            margin-top: #{$x / 2}px;
-            margin-bottom: #{$x / 2}px;
+            padding-top: #{$x / 2}px;
+            padding-bottom: #{$x / 2}px;
         }
     }
 }
@@ -38,9 +38,12 @@
     box-sizing: border-box;
     border-radius: 5px;
     color: #fff;
-    flex: 1 1;
     padding: 21px 30px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    justify-content: center;
     &-clear {
         border: 1px solid #fff;
         background: transparent;
@@ -56,6 +59,33 @@
     }
     &-round {
         border-radius: 2rem;
+    }
+    &-200 {
+        width: 200px;
+        justify-content: start;
+    }
+    &-full {
+        width: 100%;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 16px;
+    }
+}
+
+.icon {
+    &:before {
+        width: 20px;
+        height: 20px;
+        margin-right: 16px;
+        filter: contrast(0) brightness(2);
+    }
+    &-play:before {
+        content: url(../images/play-button.svg);
+    }
+    &-heart:before {
+        content: url(../images/heart.svg);
     }
 }
 .input-clear {
@@ -89,12 +119,6 @@
 .mr-143 {
     margin-right: 130px;
 }
-.no-mt {
-    margin-top: 0;
-}
-.no-mb {
-    margin-bottom: 0;
-}
 .maxw-570 {
     max-width: 570px;
 }
@@ -113,12 +137,17 @@
 .text-center {
     text-align: center;
 }
-
+.tt-cap {
+    text-transform: capitalize;
+}
 .m-0a {
     margin: 0 auto;
 }
 .bg-black {
     background: $color-black;
+}
+.fg-1 {
+    flex-grow: 1;
 }
 .flex-row-eq {
     display: flex;
@@ -154,9 +183,6 @@
 
 .bg-gradient {
     background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
-}
-
-.margin-0a {
 }
 
 .flex {
