@@ -56,12 +56,12 @@ body {
   padding: 0;
   margin: 0;
   color: #fff;
-  width: 414px;
+  width: 1440px;
   position: relative;
 }
 
-* * {
-  outline: 1px solid;
+img {
+  max-width: 100%;
 }
 
 ul {
@@ -148,12 +148,50 @@ ul {
 }
 
 .v-gap-64 {
-  margin-top: -64px;
-  margin-bottom: -64px;
+  margin-top: -32px;
+  margin-bottom: -32px;
 }
 .v-gap-64 > * {
-  margin-top: 64px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.v-gap-50 {
+  margin-top: -25px;
+  margin-bottom: -25px;
+}
+.v-gap-50 > * {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.v-gap-12 {
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+.v-gap-12 > * {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.mb-64 {
   margin-bottom: 64px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
 }
 
 .btn {
@@ -182,16 +220,12 @@ ul {
   border-radius: 2rem;
 }
 
-.no-tt {
-  text-transform: none;
-}
-
 .input-clear {
   border: 2px solid #cacaca;
   box-sizing: border-box;
   border-radius: 3px;
   background: transparent;
-  padding: 16px 22px 18px;
+  padding: 15px 22px;
   color: inherit;
   font-size: 14px;
   min-width: 270px;
@@ -255,6 +289,10 @@ ul {
   margin: 0 auto;
 }
 
+.full {
+  width: 100%;
+}
+
 .bg-black {
   background: #08020d;
 }
@@ -297,12 +335,8 @@ ul {
   background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
 }
 
-.mb-50 {
-  margin-bottom: 50px;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
+.flex {
+  display: flex;
 }
 
 .menu {
@@ -312,13 +346,22 @@ ul {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 25px;
+  top: 16px;
   left: 0;
   right: 0;
+}
+.menu > * {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.menu li {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .menu .logo {
   display: flex;
   align-items: center;
+  margin-right: 93px;
 }
 .menu .logo-img {
   width: 24px;
@@ -333,26 +376,22 @@ ul {
   border-radius: 50px;
   border: none;
   padding: 5px 10px;
-  width: 180px;
+  width: 248px;
 }
 
 .banner {
   background: url("../images/banner.png") center/cover;
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+}
+.banner p {
+  margin: 32px 0 16px;
 }
 
 .subscribe-form {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 594px;
+  max-width: 570px;
   margin: 0 auto;
-}
-.subscribe-form .input-clear {
-  margin: 12px;
-}
-.subscribe-form .btn {
-  margin: 12px;
 }
 
 .subscr-cards {
@@ -360,13 +399,13 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 48px;
+  padding-bottom: 24px;
 }
 .subscr-cards .card {
   border-radius: 1rem;
   background-size: cover;
-  background-position: center;
-  padding: 21px 25px 66px;
+  padding: 24px 25px 65px;
   text-align: center;
   min-width: 271px;
   box-sizing: border-box;
@@ -382,17 +421,20 @@ ul {
   background-image: url(../images/subscribe_3.png);
 }
 .subscr-cards .cost {
-  margin-top: 200px;
+  margin-top: 216px;
   vertical-align: top;
-  line-height: 0.6;
+  line-height: 0.5;
 }
 .subscr-cards .cost span {
   vertical-align: top;
+  margin: 0 7px;
 }
 .subscr-cards .btn {
   width: 100%;
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 56px;
+  margin-bottom: 63px;
+  padding: 23px 30px;
+  font-size: 16px;
 }
 
 .posts .post-title {
@@ -414,8 +456,8 @@ ul {
 }
 
 footer {
-  padding-top: 60px;
-  padding-bottom: 48px;
+  padding-top: 63px;
+  padding-bottom: 33px;
 }
 footer .block-title {
   font-weight: bold;
@@ -427,10 +469,20 @@ footer .block-title {
 .separator {
   height: 1px;
   background: #fff;
-  margin: 44px 0 40px;
+  margin: 37px 0 40px;
 }
 
-@media (max-width: 6420px) {
+.iphone-img {
+  margin-bottom: -44px;
+}
+
+.download-btn {
+  text-transform: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (max-width: 640px) {
   h1 {
     font-size: 30px;
   }
@@ -443,6 +495,10 @@ footer .block-title {
     font-size: 16px;
   }
 
+  .subscr-cards .card {
+    padding: 15px 25px 66px;
+  }
+
   .wrapper {
     padding-right: 20px;
     padding-left: 20px;
@@ -451,6 +507,25 @@ footer .block-title {
   .full-on-sm > * {
     width: 100% !important;
     flex-basis: 100%;
+  }
+
+  .banner {
+    padding-top: 248px;
+  }
+  .banner p {
+    margin: revert;
+  }
+
+  .posts .post-title {
+    font-size: 16px;
+    margin-top: 32px;
+  }
+  .posts p {
+    margin: 6px 0 24px;
+  }
+  .posts .btn {
+    font-size: 12px;
+    padding: 19px 31px;
   }
 }
 

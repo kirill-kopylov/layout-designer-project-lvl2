@@ -8,7 +8,12 @@
     h3 {
         font-size: 16px;
     }
-    
+
+    .subscr-cards {
+        .card {
+            padding: 15px 25px 66px;
+        }
+    }
     .wrapper {
         padding-right: 20px;
         padding-left: 20px;
@@ -20,14 +25,23 @@
             flex-basis: 100%;
         }
     }
-    // @each $gap in $h-gaps {
-    //     .h-gap-#{$gap} {
-    //         margin-right: 0;
-    //         margin-left: 0;
-    //         & > * {
-    //             margin-left: 0;
-    //             margin-right: 0;
-    //         }
-    //     }
-    // }
+    .banner {
+        padding-top: 248px;
+        p {
+            margin: revert;
+        }
+    }
+    .posts {
+        .post-title {
+            font-size: 16px;
+            margin-top: 32px;
+        }
+        p {
+            margin: 6px 0 24px;
+        }
+        .btn {
+            font-size: 12px;
+            padding: 19px 31px;
+        }
+    }
 }

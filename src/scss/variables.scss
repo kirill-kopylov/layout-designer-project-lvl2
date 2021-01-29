@@ -1,4 +1,4 @@
-$mobile-breakpoint: 6420px;
+$mobile-breakpoint: 640px;
 $color-black: #08020d;
 $color-gray: #e0e0e0;
 $color-dark-gray: #cacaca;
@@ -8,7 +8,8 @@ $color-orange: #f89202;
 $color-purple: #5328a1;
 $color-red: #95390c;
 $h-gaps: 50, 24, 16, 15, 12;
-$v-gaps: 64;
+$v-gaps: 64, 50, 12;
+$mbs: 64, 50, 16, 30, 25;
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
@@ -71,12 +72,15 @@ body {
     padding: 0;
     margin: 0;
     color: #fff;
-    width: 414px;
+    width: 1440px;
     position: relative;
 }
 
 * * {
-    outline: 1px solid;
+    // outline: 1px solid;
+}
+img {
+    max-width: 100%;
 }
 ul {
     margin: 0;

@@ -1,3 +1,8 @@
+@mixin mb-x($x) {
+    .mb-#{$x} {
+        margin-bottom: #{$x}px;
+    }
+}
 @mixin h-gap($x) {
     .h-gap-#{$x} {
         margin-right: #{-$x / 2}px;
@@ -10,11 +15,11 @@
 }
 @mixin v-gap($x) {
     .v-gap-#{$x} {
-        margin-top: #{-$x}px;
-        margin-bottom: #{-$x}px;
+        margin-top: #{-$x / 2}px;
+        margin-bottom: #{-$x / 2}px;
         & > * {
-            margin-top: #{$x}px;
-            margin-bottom: #{$x}px;
+            margin-top: #{$x / 2}px;
+            margin-bottom: #{$x / 2}px;
         }
     }
 }
@@ -23,6 +28,9 @@
 }
 @each $gap in $v-gaps {
     @include v-gap($gap);
+}
+@each $mb in $mbs {
+    @include mb-x($mb);
 }
 
 .btn {
@@ -50,15 +58,12 @@
         border-radius: 2rem;
     }
 }
-.no-tt {
-    text-transform: none;
-}
 .input-clear {
     border: 2px solid #cacaca;
     box-sizing: border-box;
     border-radius: 3px;
     background: transparent;
-    padding: 16px 22px 18px;
+    padding: 15px 22px;
     color: inherit;
     font-size: 14px;
     min-width: 270px;
@@ -112,7 +117,9 @@
 .m-0a {
     margin: 0 auto;
 }
-
+.full {
+    width: 100%;
+}
 .bg-black {
     background: $color-black;
 }
@@ -151,10 +158,10 @@
 .bg-gradient {
     background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
 }
-.mb-50 {
-    margin-bottom: 50px;
+
+.margin-0a {
 }
 
-.mb-30 {
-    margin-bottom: 30px;
+.flex {
+    display: flex;
 }

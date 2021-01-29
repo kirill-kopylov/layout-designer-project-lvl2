@@ -5,12 +5,21 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 25px;
+    top: 16px;
     left: 0;
     right: 0;
+    & > * {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    li {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
     .logo {
         display: flex;
         align-items: center;
+        margin-right: 93px;
     }
     .logo-img {
         width: 24px;
@@ -25,25 +34,21 @@
         border-radius: 50px;
         border: none;
         padding: 5px 10px;
-        width: 180px;
+        width: 248px;
     }
 }
 .banner {
     background: url("../images/banner.png") center/cover;
-    padding: 200px 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
+    p {
+        margin: 32px 0 16px;
+    }
 }
 .subscribe-form {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 594px;
+    max-width: 570px;
     margin: 0 auto;
-    .input-clear {
-        margin: 12px;
-    }
-    .btn {
-        margin: 12px;
-    }
 }
 
 .subscr-cards {
@@ -51,12 +56,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 48px;
+    padding-bottom: 24px;
     .card {
         border-radius: 1rem;
         background-size: cover;
-        background-position: center;
-        padding: 21px 25px 66px;
+        padding: 24px 25px 65px;
         text-align: center;
         min-width: 271px;
         box-sizing: border-box;
@@ -73,17 +78,20 @@
     }
 
     .cost {
-        margin-top: 200px;
+        margin-top: 216px;
         vertical-align: top;
-        line-height: 0.6;
+        line-height: 0.5;
         span {
             vertical-align: top;
+            margin: 0 7px;
         }
     }
     .btn {
         width: 100%;
-        margin-top: 64px;
-        margin-bottom: 64px;
+        margin-top: 56px;
+        margin-bottom: 63px;
+        padding: 23px 30px;
+        font-size: 16px;
     }
 }
 
@@ -108,8 +116,8 @@
 }
 
 footer {
-    padding-top: 60px;
-    padding-bottom: 48px;
+    padding-top: 63px;
+    padding-bottom: 33px;
     .block-title {
         font-weight: bold;
         font-size: 18px;
@@ -121,5 +129,15 @@ footer {
 .separator {
     height: 1px;
     background: #fff;
-    margin: 44px 0 40px;
+    margin: 37px 0 40px;
+}
+
+.iphone-img {
+    margin-bottom: -44px;
+}
+
+.download-btn {
+    text-transform: none;
+    padding-left: 40px;
+    padding-right: 40px;
 }

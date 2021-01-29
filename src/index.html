@@ -15,7 +15,7 @@
         <img src="./images/logo.svg" class="logo-img" alt="">
         MUSIC BOX
       </a>
-      <ul class="inline-list h-gap-12 full-on-sm">
+      <ul class="inline-list h-gap-24 full-on-sm">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Исполнители</a></li>
@@ -31,16 +31,18 @@
       <h1 class="no-mt no-mb">Онлайн музыка где угодно</h1>
       <h2 class="no-mt">Без ограничений</h2>
       <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-      <form class="subscribe-form">
-        <input type="text" class="input-clear" placeholder="Имя">
-        <input type="text" class="input-clear" placeholder="Email">
-        <button class="btn btn-green">Получить доступ</button>
-      </form>
+      <div class="subscribe-form margin-0a">
+        <form class="flex flex-wrap h-gap-24 v-gap-24">
+          <input type="text" class="input-clear" placeholder="Имя">
+          <input type="text" class="input-clear" placeholder="Email">
+          <button class="btn btn-green">Получить доступ</button>
+        </form>
+      </div>
     </section>
     <section class="wrapper pt-100" id="page-pricing">
       <h2 class="text-center">Формы подписки</h2>
-      <div class="subscr-cards  h-gap-50">
-        <div class="card mb-50 bg-free">
+      <div class="subscr-cards h-gap-50 v-gap-50">
+        <div class="card bg-free">
           <h3>Бесплатная</h3>
           <div class="cost">
             <span class="t-size-7">0</span>
@@ -50,7 +52,7 @@
           <div class="t-small">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки.
             Присутствует реклама</div>
         </div>
-        <div class="card mb-50 bg-standart">
+        <div class="card bg-standart">
           <h3>Стандартная</h3>
           <div class="cost">
             <span class="t-size-7">250</span>
@@ -60,7 +62,7 @@
           <div class="t-small">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки
             в среднем качестве</div>
         </div>
-        <div class="card mb-50 bg-premium">
+        <div class="card bg-premium">
           <h3>Премиум</h3>
           <div class="cost">
             <span class="t-size-7">500</span>
@@ -76,10 +78,12 @@
         все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
     </section>
     <section class="wrapper pt-100" id="page-news">
-      <h2 class="text-center">Последние новости</h2>
-      <div class="posts v-gap-64">
-        <article class="post flex-row-eq h-gap-50">
-          <img class="poster" src="./images/Music to Be Murdered By.png" alt="">
+      <h2 class="text-center mb-50">Последние новости</h2>
+      <div class="posts">
+        <article class="post flex-row-eq full-on-sm h-gap-50 mb-64">
+          <div>
+            <img class="poster" src="./images/Music to Be Murdered By.png" alt="">
+          </div>
           <div class="post-info">
             <div class="post-title">Music to Be Murdered By</div>
             <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас
@@ -92,8 +96,10 @@
             <button class="btn btn-clear">К АЛЬБОМУ</button>
           </div>
         </article>
-        <article class="post flex-row-eq row-reverse h-gap-50">
-          <img class="poster" src="./images/Ordinary Man.png" alt="">
+        <article class="post flex-row-eq full-on-sm row-reverse h-gap-50">
+          <div>
+            <img class="poster" src="./images/Ordinary Man.png" alt="">
+          </div>
           <div class="post-info">
             <div class="post-title">Ordinary Man</div>
             <p>Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе
@@ -109,7 +115,7 @@
       </div>
     </section>
     <section class="wrapper pt-100 pb-100" id="page-app">
-      <h2 class="text-center">Мобильное приложение</h2>
+      <h2 class="text-center mb-50">Мобильное приложение</h2>
       <div class="flex-row-eq wrap-reverse j-sb full-on-sm">
         <div>
           <p>
@@ -120,12 +126,12 @@
             С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете
             слушать музыку даже без интернета.
           </p>
-          <button class="btn btn-round btn-red no-tt">
+          <button class="btn btn-round btn-red download-btn">
             Скачать
           </button>
         </div>
         <div class="text-center">
-          <img src="./images/iphone.png" alt="">
+          <img class="full iphone-img" src="./images/iphone.png" alt="">
         </div>
       </div>
     </section>
@@ -173,11 +179,11 @@
 
     <section class="wrapper flex-row-eq full-on-sm">
       <ul class="inline-list h-gap-15 full-on-sm">
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Обслуживание</a></li>
-        <li><a href="#">Блог</a></li>
-        <li><a href="#">Поддержка</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li class="mb-16"><a href="#">Магазин</a></li>
+        <li class="mb-16"><a href="#">Обслуживание</a></li>
+        <li class="mb-16"><a href="#">Блог</a></li>
+        <li class="mb-16"><a href="#">Поддержка</a></li>
+        <li class="mb-16"><a href="#">Контакты</a></li>
       </ul>
     </section>
   </footer>
