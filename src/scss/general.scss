@@ -1,5 +1,3 @@
-$h-gaps: 50, 24, 16, 15;
-$v-gaps: 64;
 @mixin h-gap($x) {
     .h-gap-#{$x} {
         margin-right: #{-$x / 2}px;
@@ -121,11 +119,17 @@ $v-gaps: 64;
 .flex-row-eq {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     & > * {
         flex: 1 1;
     }
 }
-
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -146,4 +150,11 @@ $v-gaps: 64;
 
 .bg-gradient {
     background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
 }

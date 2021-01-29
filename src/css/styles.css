@@ -12,6 +12,10 @@
   font-weight: 700;
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
 }
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -52,8 +56,12 @@ body {
   padding: 0;
   margin: 0;
   color: #fff;
-  width: 1440px;
+  width: 414px;
   position: relative;
+}
+
+* * {
+  outline: 1px solid;
 }
 
 ul {
@@ -128,6 +136,15 @@ ul {
 .h-gap-15 > * {
   margin-left: 7.5px;
   margin-right: 7.5px;
+}
+
+.h-gap-12 {
+  margin-right: -6px;
+  margin-left: -6px;
+}
+.h-gap-12 > * {
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .v-gap-64 {
@@ -245,9 +262,18 @@ ul {
 .flex-row-eq {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .flex-row-eq > * {
   flex: 1 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .flex-row {
@@ -271,6 +297,14 @@ ul {
   background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
 }
 
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .menu {
   font-size: 11px;
   text-transform: uppercase;
@@ -292,13 +326,7 @@ ul {
   margin-right: 16px;
 }
 .menu ul {
-  list-style: none;
-  display: flex;
   flex-grow: 1;
-  margin: 0;
-}
-.menu ul li {
-  margin: 0 12px;
 }
 .menu .search-input {
   background: #3c3b3d;
@@ -385,22 +413,45 @@ ul {
   height: 19px;
 }
 
-.footer-block .block-title {
+footer {
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+footer .block-title {
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
 
-footer {
-  padding-top: 60px;
-  padding-bottom: 48px;
-}
-
 .separator {
   height: 1px;
   background: #fff;
-  margin: 74px 0 40px;
+  margin: 44px 0 40px;
+}
+
+@media (max-width: 6420px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .full-on-sm > * {
+    width: 100% !important;
+    flex-basis: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

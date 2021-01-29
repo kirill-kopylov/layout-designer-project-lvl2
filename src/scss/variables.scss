@@ -1,4 +1,4 @@
-$mobile-breakpoint: 640px;
+$mobile-breakpoint: 6420px;
 $color-black: #08020d;
 $color-gray: #e0e0e0;
 $color-dark-gray: #cacaca;
@@ -7,6 +7,8 @@ $color-green: #34c176;
 $color-orange: #f89202;
 $color-purple: #5328a1;
 $color-red: #95390c;
+$h-gaps: 50, 24, 16, 15, 12;
+$v-gaps: 64;
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
@@ -23,6 +25,10 @@ $color-red: #95390c;
     font-weight: 700;
     src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"),
         url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1,
@@ -65,13 +71,22 @@ body {
     padding: 0;
     margin: 0;
     color: #fff;
-    width: 1440px;
+    width: 414px;
     position: relative;
+}
+
+* * {
+    outline: 1px solid;
 }
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+img {
+    // height: fit-content;
+    // max-width: -webkit-fill-available;
+    // flex-shrink: 0;
 }
 .t-size-2 {
     font-size: 24px;

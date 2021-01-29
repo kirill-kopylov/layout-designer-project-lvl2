@@ -18,13 +18,7 @@
         margin-right: 16px;
     }
     ul {
-        list-style: none;
-        display: flex;
         flex-grow: 1;
-        margin: 0;
-        li {
-            margin: 0 12px;
-        }
     }
     .search-input {
         background: #3c3b3d;
@@ -113,7 +107,9 @@
     }
 }
 
-.footer-block {
+footer {
+    padding-top: 60px;
+    padding-bottom: 48px;
     .block-title {
         font-weight: bold;
         font-size: 18px;
@@ -122,13 +118,8 @@
     }
 }
 
-footer {
-    padding-top: 60px;
-    padding-bottom: 48px;
-}
-
 .separator {
     height: 1px;
     background: #fff;
-    margin: 74px 0 40px;
+    margin: 44px 0 40px;
 }
