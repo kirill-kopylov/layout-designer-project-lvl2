@@ -1,0 +1,35 @@
+.news-post {
+    .post-title {
+        font-size: 30px;
+        line-height: 45px;
+        text-transform: capitalize;
+    }
+    p {
+        margin: 30px 0 24px;
+    }
+    .post-created {
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
+        img {
+            width: 19px;
+            height: 19px;
+        }
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .news-post {
+        .post-title {
+            font-size: 16px;
+            margin-top: 32px;
+        }
+        p {
+            margin: 6px 0 24px;
+        }
+        .btn {
+            font-size: 12px;
+            padding: 19px 31px;
+        }
+    }
+}

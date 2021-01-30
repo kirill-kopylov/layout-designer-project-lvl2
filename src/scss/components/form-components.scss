@@ -1,0 +1,78 @@
+.btn {
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #fff;
+    padding: 21px 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    justify-content: center;
+    &-clear {
+        border: 1px solid #fff;
+        background: transparent;
+    }
+    &-green {
+        background: $color-green;
+    }
+    &-purple {
+        background: $color-purple;
+    }
+    &-red {
+        background: $color-red;
+    }
+    &-round {
+        border-radius: 2rem;
+    }
+    &-200 {
+        width: 200px;
+        justify-content: start;
+    }
+    &-full {
+        width: 100%;
+    }
+    &-download {
+        text-transform: none;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 16px;
+    }
+}
+
+.icon {
+    &:before {
+        width: 20px;
+        height: 20px;
+        margin-right: 16px;
+        filter: contrast(0) brightness(2);
+    }
+    &-play:before {
+        content: url(../images/play-button.svg);
+    }
+    &-heart:before {
+        content: url(../images/heart.svg);
+    }
+}
+
+.input-clear {
+    border: 2px solid #cacaca;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: transparent;
+    padding: 15px 22px;
+    color: inherit;
+    font-size: 14px;
+    min-width: 270px;
+    flex: 1 1;
+}
+
+.separator {
+    height: 1px;
+    background: #fff;
+    margin: 37px 0 40px;
+}

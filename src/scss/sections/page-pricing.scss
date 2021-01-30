@@ -1,0 +1,10 @@
+#page-pricing {
+    .subscr-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+}

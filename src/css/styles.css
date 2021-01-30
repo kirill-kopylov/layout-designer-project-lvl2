@@ -1,3 +1,39 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  position: relative;
+  background: #08020d;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 /* roboto-regular -  latin_cyrillic */
 @font-face {
   font-family: "Roboto";
@@ -12,10 +48,6 @@
   font-weight: 700;
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
 }
-* {
-  box-sizing: border-box;
-}
-
 h1,
 h2,
 h3,
@@ -53,26 +85,6 @@ a {
   font-weight: bold;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-  position: relative;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .t-size-2 {
   font-size: 24px;
 }
@@ -105,6 +117,35 @@ ul {
   text-transform: uppercase;
 }
 
+.text-white {
+  color: #fff;
+}
+
+.text-orange {
+  color: #f89202;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tt-cap {
+  text-transform: capitalize;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
 .h-gap-50 {
   margin-right: -25px;
   margin-left: -25px;
@@ -233,6 +274,71 @@ ul {
   margin-bottom: 12px;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.flex-row-eq {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-row-eq > * {
+  flex: 1 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.j-sb {
+  justify-content: space-between;
+}
+
+.inline-list > li {
+  display: inline-block;
+}
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .full-on-sm > * {
+    width: 100% !important;
+    flex-basis: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .artist-item {
+    max-width: 187px;
+  }
+}
+@media (max-width: 640px) {
+  .discography-item {
+    max-width: 188px;
+  }
+}
 .btn {
   border: none;
   box-sizing: border-box;
@@ -268,6 +374,11 @@ ul {
 .btn-full {
   width: 100%;
 }
+.btn-download {
+  text-transform: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .btn img {
   width: 20px;
   height: 20px;
@@ -299,107 +410,117 @@ ul {
   flex: 1 1;
 }
 
-.wrapper {
-  padding-right: 120px;
-  padding-left: 120px;
+.separator {
+  height: 1px;
+  background: #fff;
+  margin: 37px 0 40px;
 }
 
-.pt-100 {
-  padding-top: 100px;
-}
-
-.pb-100 {
-  padding-bottom: 100px;
-}
-
-.pt-200 {
-  padding-top: 200px;
-}
-
-.pb-200 {
-  padding-bottom: 200px;
-}
-
-.mr-143 {
-  margin-right: 130px;
-}
-
-.maxw-570 {
-  max-width: 570px;
-}
-
-.maxw-600 {
-  max-width: 600px;
-}
-
-.text-white {
-  color: #fff;
-}
-
-.text-orange {
-  color: #f89202;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.tt-cap {
+.news-post .post-title {
+  font-size: 30px;
+  line-height: 45px;
   text-transform: capitalize;
 }
-
-.m-0a {
-  margin: 0 auto;
+.news-post p {
+  margin: 30px 0 24px;
 }
-
-.bg-black {
-  background: #08020d;
-}
-
-.fg-1 {
-  flex-grow: 1;
-}
-
-.flex-row-eq {
+.news-post .post-created {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 48px;
 }
-.flex-row-eq > * {
+.news-post .post-created img {
+  width: 19px;
+  height: 19px;
+}
+
+@media (max-width: 640px) {
+  .news-post .post-title {
+    font-size: 16px;
+    margin-top: 32px;
+  }
+  .news-post p {
+    margin: 6px 0 24px;
+  }
+  .news-post .btn {
+    font-size: 12px;
+    padding: 19px 31px;
+  }
+}
+.song-item {
+  flex: 1 1 calc(50% - 50px);
+  display: flex;
+  align-items: center;
+}
+.song-item img {
+  width: 55px;
+  height: 55px;
+  margin-right: 15px;
+}
+
+.subscribe-card {
+  border-radius: 1rem;
+  background-size: cover;
+  padding: 24px 25px 65px;
+  text-align: center;
+  min-width: 271px;
+  box-sizing: border-box;
   flex: 1 1;
 }
-
-.flex-wrap {
-  flex-wrap: wrap;
+.subscribe-card.bg-free {
+  background-image: url(../images/subscribe_1.png);
+}
+.subscribe-card.bg-standart {
+  background-image: url(../images/subscribe_2.png);
+}
+.subscribe-card.bg-premium {
+  background-image: url(../images/subscribe_3.png);
+}
+.subscribe-card .cost {
+  margin-top: 216px;
+  vertical-align: top;
+  line-height: 0.5;
+}
+.subscribe-card .cost span {
+  vertical-align: top;
+  margin: 0 7px;
+}
+.subscribe-card .btn {
+  width: 100%;
+  margin-top: 56px;
+  margin-bottom: 63px;
+  padding: 23px 30px;
+  font-size: 16px;
 }
 
-.wrap-reverse {
-  flex-wrap: wrap-reverse;
+@media (max-width: 640px) {
+  .subscribe-card {
+    padding: 15px 25px 66px;
+  }
+}
+.artist-banner {
+  background: url("../images/Morten Harket.png") center/cover;
+  padding-top: 250px;
+  padding-bottom: 224px;
+}
+.artist-banner p {
+  margin: 17px 0 48px;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
+@media (max-width: 640px) {
+  .artist-banner {
+    padding-top: 225px;
+  }
 }
-
-.row-reverse {
-  flex-direction: row-reverse;
+footer {
+  padding-top: 63px;
+  padding-bottom: 33px;
 }
-
-.j-sb {
-  justify-content: space-between;
-}
-
-.inline-list > li {
-  display: inline-block;
-}
-
-.bg-gradient {
-  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-}
-
-.flex {
-  display: flex;
+footer .block-title {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .menu {
@@ -442,196 +563,39 @@ ul {
   width: 248px;
 }
 
-.banner {
+.main-banner {
   background: url("../images/banner.png") center/cover;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
-.banner p {
+.main-banner p {
   margin: 32px 0 16px;
 }
-
-.author-banner {
-  background: url("../images/Morten Harket.png") center/cover;
-  padding-top: 250px;
-  padding-bottom: 224px;
-}
-.author-banner p {
-  margin: 17px 0 48px;
-}
-
-.subscribe-form {
+.main-banner .subscribe-form {
   max-width: 570px;
   margin: 0 auto;
 }
 
-.subscr-cards {
+@media (max-width: 640px) {
+  .main-banner {
+    padding-top: 248px;
+  }
+  .main-banner p {
+    margin: revert;
+  }
+}
+#page-app .iphone-img {
+  margin-bottom: -44px;
+}
+
+#page-pricing .subscr-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 48px;
   padding-bottom: 24px;
-}
-.subscr-cards .card {
-  border-radius: 1rem;
-  background-size: cover;
-  padding: 24px 25px 65px;
-  text-align: center;
-  min-width: 271px;
-  box-sizing: border-box;
-  flex: 1 1;
-}
-.subscr-cards .card.bg-free {
-  background-image: url(../images/subscribe_1.png);
-}
-.subscr-cards .card.bg-standart {
-  background-image: url(../images/subscribe_2.png);
-}
-.subscr-cards .card.bg-premium {
-  background-image: url(../images/subscribe_3.png);
-}
-.subscr-cards .cost {
-  margin-top: 216px;
-  vertical-align: top;
-  line-height: 0.5;
-}
-.subscr-cards .cost span {
-  vertical-align: top;
-  margin: 0 7px;
-}
-.subscr-cards .btn {
-  width: 100%;
-  margin-top: 56px;
-  margin-bottom: 63px;
-  padding: 23px 30px;
-  font-size: 16px;
-}
-
-.posts .post-title {
-  font-size: 30px;
-  line-height: 45px;
-  text-transform: capitalize;
-}
-.posts p {
-  margin: 30px 0 24px;
-}
-.posts .post-created {
-  display: flex;
-  align-items: center;
-  margin-bottom: 48px;
-}
-.posts .post-created img {
-  width: 19px;
-  height: 19px;
-}
-
-footer {
-  padding-top: 63px;
-  padding-bottom: 33px;
-}
-footer .block-title {
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.separator {
-  height: 1px;
-  background: #fff;
-  margin: 37px 0 40px;
-}
-
-.iphone-img {
-  margin-bottom: -44px;
-}
-
-.download-btn {
-  text-transform: none;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.songs {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.songs .song {
-  flex: 1 1 calc(50% - 50px);
-  display: flex;
-  align-items: center;
-}
-.songs img {
-  width: 55px;
-  height: 55px;
-  margin-right: 15px;
-}
-
-@media (max-width: 640px) {
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .subscr-cards .card {
-    padding: 15px 25px 66px;
-  }
-
-  .wrapper {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .full-on-sm > * {
-    width: 100% !important;
-    flex-basis: 100% !important;
-  }
-
-  .half-on-sm > * {
-    width: 50% !important;
-    flex-basis: 50% !important;
-  }
-
-  .banner {
-    padding-top: 248px;
-  }
-  .banner p {
-    margin: revert;
-  }
-
-  .author-banner {
-    padding-top: 225px;
-  }
-
-  .posts .post-title {
-    font-size: 16px;
-    margin-top: 32px;
-  }
-  .posts p {
-    margin: 6px 0 24px;
-  }
-  .posts .btn {
-    font-size: 12px;
-    padding: 19px 31px;
-  }
-
-  .disks .disk {
-    max-width: 188px;
-  }
-
-  .authors .author {
-    max-width: 187px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

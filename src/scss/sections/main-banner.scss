@@ -1,0 +1,22 @@
+.main-banner {
+    background: url("../images/banner.png") center/cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    p {
+        margin: 32px 0 16px;
+    }
+    .subscribe-form {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .main-banner {
+        padding-top: 248px;
+        p {
+            margin: revert;
+        }
+    }
+}

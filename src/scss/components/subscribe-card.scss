@@ -1,0 +1,41 @@
+.subscribe-card {
+    border-radius: 1rem;
+    background-size: cover;
+    padding: 24px 25px 65px;
+    text-align: center;
+    min-width: 271px;
+    box-sizing: border-box;
+    flex: 1 1;
+    &.bg-free {
+        background-image: url(../images/subscribe_1.png);
+    }
+    &.bg-standart {
+        background-image: url(../images/subscribe_2.png);
+    }
+    &.bg-premium {
+        background-image: url(../images/subscribe_3.png);
+    }
+
+    .cost {
+        margin-top: 216px;
+        vertical-align: top;
+        line-height: 0.5;
+        span {
+            vertical-align: top;
+            margin: 0 7px;
+        }
+    }
+    .btn {
+        width: 100%;
+        margin-top: 56px;
+        margin-bottom: 63px;
+        padding: 23px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .subscribe-card {
+        padding: 15px 25px 66px;
+    }
+}
