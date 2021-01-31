@@ -6,7 +6,8 @@ body {
     margin: 0;
     color: #fff;
     position: relative;
-    background: $color-black;
+    width: 414px;
+    width: 1440px;
 }
 
 img {
@@ -24,6 +25,7 @@ ul {
 }
 
 .wrapper {
+    background: $color-black;
     max-width: 1240px;
     padding-right: 20px;
     padding-left: 20px;

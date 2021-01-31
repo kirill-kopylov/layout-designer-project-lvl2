@@ -6,7 +6,8 @@ body {
   margin: 0;
   color: #fff;
   position: relative;
-  background: #08020d;
+  width: 414px;
+  width: 1440px;
 }
 
 img {
@@ -24,6 +25,7 @@ ul {
 }
 
 .wrapper {
+  background: #08020d;
   max-width: 1240px;
   padding-right: 20px;
   padding-left: 20px;
@@ -54,9 +56,10 @@ h1,
 h2,
 h3,
 h4 {
+  color: #ffffff;
   font-weight: normal;
   text-transform: uppercase;
-  line-height: 1.5;
+  line-height: 147%;
   margin: 0;
 }
 
@@ -121,6 +124,14 @@ a {
 
 .text-white {
   color: #fff;
+}
+
+.text-dark-gray {
+  color: #cacaca;
+}
+
+.text-gray {
+  color: #e0e0e0;
 }
 
 .text-orange {
@@ -476,13 +487,19 @@ a {
   margin: 37px 0 40px;
 }
 
+.news-post {
+  color: #cacaca;
+}
+.news-post .poster {
+  width: 100%;
+}
 .news-post .post-title {
   font-size: 30px;
   line-height: 45px;
   text-transform: capitalize;
 }
 .news-post p {
-  margin: 30px 0 24px;
+  margin: 30px 0 16px;
 }
 .news-post .post-created {
   display: flex;
@@ -492,6 +509,10 @@ a {
 .news-post .post-created img {
   width: 19px;
   height: 19px;
+}
+.news-post .btn {
+  padding: 20px 31px 17px 30px;
+  font-size: 12.4px;
 }
 
 @media (max-width: 640px) {
@@ -520,12 +541,9 @@ a {
 
 .subscribe-card {
   border-radius: 1rem;
-  background-size: cover;
-  padding: 24px 25px 65px;
+  padding: 24px 24px 65px;
   text-align: center;
-  min-width: 271px;
-  box-sizing: border-box;
-  flex: 1 1;
+  background-size: cover;
 }
 .subscribe-card.bg-free {
   background-image: url(../images/subscribe_1.png);
@@ -555,7 +573,7 @@ a {
 
 @media (max-width: 640px) {
   .subscribe-card {
-    padding: 15px 25px 66px;
+    padding: 16px 24px 65px;
   }
 }
 .artist-banner {

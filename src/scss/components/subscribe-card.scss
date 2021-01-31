@@ -1,11 +1,8 @@
 .subscribe-card {
     border-radius: 1rem;
-    background-size: cover;
-    padding: 24px 25px 65px;
+    padding: 24px 24px 65px;
     text-align: center;
-    min-width: 271px;
-    box-sizing: border-box;
-    flex: 1 1;
+    background-size: cover;
     &.bg-free {
         background-image: url(../images/subscribe_1.png);
     }
@@ -36,6 +33,6 @@
 
 @media (max-width: $mobile-breakpoint) {
     .subscribe-card {
-        padding: 15px 25px 66px;
+        padding: 16px 24px 65px;
     }
 }
