@@ -24,8 +24,10 @@ ul {
 }
 
 .wrapper {
-  padding-right: 120px;
-  padding-left: 120px;
+  max-width: 1240px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
 }
 
 @media (max-width: 640px) {
@@ -146,107 +148,19 @@ a {
     font-size: 16px;
   }
 }
-.h-gap-50 {
-  margin-right: -25px;
-  margin-left: -25px;
-  overflow: hidden;
-}
-.h-gap-50 > * {
-  margin-left: 25px;
-  margin-right: 25px;
+.mb-100 {
+  margin-bottom: 100px;
 }
 
-.h-gap-24 {
-  margin-right: -12px;
-  margin-left: -12px;
-  overflow: hidden;
-}
-.h-gap-24 > * {
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-.h-gap-16 {
-  margin-right: -8px;
-  margin-left: -8px;
-  overflow: hidden;
-}
-.h-gap-16 > * {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.h-gap-15 {
-  margin-right: -7.5px;
-  margin-left: -7.5px;
-  overflow: hidden;
-}
-.h-gap-15 > * {
-  margin-left: 7.5px;
-  margin-right: 7.5px;
-}
-
-.h-gap-12 {
-  margin-right: -6px;
-  margin-left: -6px;
-  overflow: hidden;
-}
-.h-gap-12 > * {
-  margin-left: 6px;
-  margin-right: 6px;
-}
-
-.v-gap-64 {
-  margin-top: -32px;
-  margin-bottom: -32px;
-  overflow: hidden;
-}
-.v-gap-64 > * {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.v-gap-50 {
-  margin-top: -25px;
-  margin-bottom: -25px;
-  overflow: hidden;
-}
-.v-gap-50 > * {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.v-gap-25 {
-  margin-top: -12.5px;
-  margin-bottom: -12.5px;
-  overflow: hidden;
-}
-.v-gap-25 > * {
-  margin-top: 12.5px;
-  margin-bottom: 12.5px;
-}
-
-.v-gap-24 {
-  margin-top: -12px;
-  margin-bottom: -12px;
-  overflow: hidden;
-}
-.v-gap-24 > * {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-.v-gap-12 {
-  margin-top: -6px;
-  margin-bottom: -6px;
-  overflow: hidden;
-}
-.v-gap-12 > * {
-  margin-top: 6px;
-  margin-bottom: 6px;
+.ch-mb-100 > * {
+  margin-bottom: 100px;
 }
 
 .mb-57 {
+  margin-bottom: 57px;
+}
+
+.ch-mb-57 > * {
   margin-bottom: 57px;
 }
 
@@ -254,7 +168,15 @@ a {
   margin-bottom: 50px;
 }
 
+.ch-mb-50 > * {
+  margin-bottom: 50px;
+}
+
 .mb-30 {
+  margin-bottom: 30px;
+}
+
+.ch-mb-30 > * {
   margin-bottom: 30px;
 }
 
@@ -262,7 +184,23 @@ a {
   margin-bottom: 25px;
 }
 
+.ch-mb-25 > * {
+  margin-bottom: 25px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.ch-mb-24 > * {
+  margin-bottom: 24px;
+}
+
 .mb-18 {
+  margin-bottom: 18px;
+}
+
+.ch-mb-18 > * {
   margin-bottom: 18px;
 }
 
@@ -270,8 +208,40 @@ a {
   margin-bottom: 16px;
 }
 
+.ch-mb-16 > * {
+  margin-bottom: 16px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
+}
+
+.ch-mb-12 > * {
+  margin-bottom: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.ch-mr-24 > * {
+  margin-right: 24px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.ch-mr-15 > * {
+  margin-right: 15px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.ch-mr-16 > * {
+  margin-right: 16px;
 }
 
 .pt-100 {
@@ -313,6 +283,7 @@ a {
 
 .inline-list > li {
   display: inline-block;
+  margin-right: 24px;
 }
 
 .bg-gradient {
@@ -327,6 +298,95 @@ a {
   .full-on-sm > * {
     width: 100% !important;
     flex-basis: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+.grid {
+  display: grid;
+}
+
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-50 {
+  grid-gap: 50px;
+}
+
+.gap-24 {
+  grid-gap: 24px;
+}
+
+.col-gap-50 {
+  column-gap: 50px;
+}
+
+.col-gap-24 {
+  column-gap: 24px;
+}
+
+.row-gap-50 {
+  row-gap: 50px;
+}
+
+.row-gap-24 {
+  row-gap: 24px;
+}
+
+.row-gap-25 {
+  row-gap: 25px;
+}
+
+.col-full {
+  grid-column: 1/-1;
+}
+
+.grid-auto-300 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-auto-200 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-row-reverse {
+  direction: rtl;
+}
+.grid-row-reverse > * {
+  direction: initial;
+}
+
+@media (max-width: 640px) {
+  .cols-sm-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .col-sm-full {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 1240px) {
+  .cols-md-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .cols-md-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-md-full {
+    grid-column: 1/-1;
+  }
+
+  .order-md-1 {
+    order: 1;
   }
 }
 @media (max-width: 640px) {
@@ -406,7 +466,7 @@ a {
   padding: 15px 22px;
   color: inherit;
   font-size: 14px;
-  min-width: 270px;
+  width: 100%;
   flex: 1 1;
 }
 
@@ -590,10 +650,6 @@ footer .block-title {
 }
 
 #page-pricing .subscr-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: 48px;
   padding-bottom: 24px;
 }

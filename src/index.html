@@ -15,10 +15,10 @@
         <img src="./images/logo.svg" class="logo-img" alt="">
         MUSIC BOX
       </a>
-      <ul class="inline-list h-gap-24 full-on-sm">
+      <ul class="inline-list full-on-sm">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Каталог</a></li>
-        <li><a href="artist.html">Исполнители</a></li>
+        <li><a href="#"><a href="artist.html">Исполнители</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="search full-on-sm">
@@ -27,21 +27,23 @@
     </nav>
   </header>
   <main>
-    <section class="wrapper main-banner" id="page-description">
-      <h1>Онлайн музыка где угодно</h1>
-      <h2>Без ограничений</h2>
-      <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-      <div class="subscribe-form">
-        <form class="flex flex-wrap h-gap-24 v-gap-24">
-          <input type="text" class="input-clear" placeholder="Имя">
-          <input type="text" class="input-clear" placeholder="Email">
-          <button class="btn btn-green btn-full">Получить доступ</button>
-        </form>
+    <section class="main-banner" id="page-description">
+      <div class="wrapper">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>Без ограничений</h2>
+        <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <div class="subscribe-form">
+          <form class="grid cols-2 cols-sm-1  gap-24">
+            <input type="text" class="input-clear" placeholder="Имя">
+            <input type="text" class="input-clear" placeholder="Email">
+            <button class="btn btn-green btn-full col-full">Получить доступ</button>
+          </form>
+        </div>
       </div>
     </section>
     <section class="wrapper pt-100" id="page-pricing">
       <h2 class="text-center">Формы подписки</h2>
-      <div class="subscr-cards h-gap-50 v-gap-50">
+      <div class="subscr-cards grid grid-auto-300 gap-50">
         <div class="subscribe-card bg-free">
           <h3>Бесплатная</h3>
           <div class="cost">
@@ -80,7 +82,7 @@
     <section class="wrapper pt-100" id="page-news">
       <h2 class="text-center mb-50">Последние новости</h2>
       <div class="news-posts">
-        <article class="news-post flex-row-eq full-on-sm h-gap-50 mb-57">
+        <article class="news-post grid grid-auto-300 gap-50 mb-57">
           <div>
             <img class="poster" src="./images/Music%20to%20Be%20Murdered%20By.png" alt="">
           </div>
@@ -88,7 +90,7 @@
             <h3 class="post-title">Music to Be Murdered By</h3>
             <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас
               ждёт 20 новых треков.</p>
-            <div class="post-created t-small h-gap-16">
+            <div class="post-created t-small ch-mr-16">
               <img src="./images/avatar.png" alt="avatar">
               <span class="text-orange">MUSIC BOX</span>
               <span class="post-date">17/01/2020</span>
@@ -96,7 +98,7 @@
             <button class="btn btn-clear">К АЛЬБОМУ</button>
           </div>
         </article>
-        <article class="news-post flex-row-eq full-on-sm row-reverse h-gap-50">
+        <article class="news-post grid grid-auto-300 grid-row-reverse gap-50">
           <div>
             <img class="poster" src="./images/Ordinary%20Man.png" alt="">
           </div>
@@ -104,7 +106,7 @@
             <h3 class="post-title">Ordinary Man</h3>
             <p>Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе
               первых на Music Box</p>
-            <div class="post-created t-small h-gap-16">
+            <div class="post-created t-small ch-mr-16">
               <img src="./images/avatar.png" alt="avatar">
               <span class="text-orange">MUSIC BOX</span>
               <span class="post-date">24/02/2020</span>
@@ -116,8 +118,8 @@
     </section>
     <section class="wrapper pt-100 pb-100" id="page-app">
       <h2 class="text-center mb-50">Мобильное приложение</h2>
-      <div class="flex-row-eq wrap-reverse j-sb full-on-sm">
-        <div>
+      <div class="grid grid-auto-300">
+        <div class="order-md-1">
           <p>
             Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на
             базе операционных систем Androind и iOS
@@ -137,8 +139,8 @@
     </section>
   </main>
   <footer class="bg-gradient">
-    <section class="wrapper flex-row-eq full-on-sm footer-links">
-      <div class="mb-30">
+    <section class="wrapper grid-auto-200 gap-50 footer-links">
+      <div>
         <h2 class="block-title">О нас</h2>
         <ul>
           <li><a href="#">История компании</a></li>
@@ -147,7 +149,7 @@
           <li><a href="#">Пресса</a></li>
         </ul>
       </div>
-      <div class="mb-30">
+      <div>
         <h2 class="block-title">Поддержка</h2>
         <ul>
           <li><a href="#">База знаний</a></li>
@@ -156,7 +158,7 @@
           <li><a href="#">Условия использования</a></li>
         </ul>
       </div>
-      <div class="mb-30">
+      <div>
         <h2 class="block-title">Контакты</h2>
         <ul>
           <li><a href="mailto:#">hello@music.box</a></li>
@@ -164,9 +166,9 @@
           <li><a href="tel:#">+ 7 499 999 99 99</a></li>
         </ul>
       </div>
-      <div class="mb-30">
+      <div>
         <h2 class="block-title">Подписывайтесь</h2>
-        <ul class="inline-list h-gap-24">
+        <ul class="inline-list">
           <li><a href="#"><img src="./images/Google+.png" alt=""></a></li>
           <li><a href="#"><img src="./images/Twitter.png" alt=""></a></li>
           <li><a href="#"><img src="./images/Facebook.png" alt=""></a></li>
@@ -177,13 +179,13 @@
 
     <div class="separator"></div>
 
-    <div class="wrapper flex-row-eq full-on-sm">
-      <ul class="inline-list h-gap-15 full-on-sm">
-        <li class="mb-16"><a href="#">Магазин</a></li>
-        <li class="mb-16"><a href="#">Обслуживание</a></li>
-        <li class="mb-16"><a href="#">Блог</a></li>
-        <li class="mb-16"><a href="#">Поддержка</a></li>
-        <li class="mb-16"><a href="#">Контакты</a></li>
+    <div class="wrapper">
+      <ul class="inline-list full-on-sm ch-mb-16 ch-mr-15">
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Обслуживание</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Поддержка</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </div>
   </footer>

@@ -2,37 +2,28 @@
     .mb-#{$x} {
         margin-bottom: #{$x}px;
     }
-}
-@mixin h-gap($x) {
-    .h-gap-#{$x} {
-        margin-right: #{-$x / 2}px;
-        margin-left: #{-$x / 2}px;
-        overflow: hidden;
+    .ch-mb-#{$x} {
         & > * {
-            margin-left: #{$x / 2}px;
-            margin-right: #{$x / 2}px;
+            margin-bottom: #{$x}px;
         }
     }
 }
-@mixin v-gap($x) {
-    .v-gap-#{$x} {
-        margin-top: #{-$x / 2}px;
-        margin-bottom: #{-$x / 2}px;
-        overflow: hidden;
+@mixin mr-x($x) {
+    .mr-#{$x} {
+        margin-right: #{$x}px;
+    }
+    
+    .ch-mr-#{$x} {
         & > * {
-            margin-top: #{$x / 2}px;
-            margin-bottom: #{$x / 2}px;
+            margin-right: #{$x}px;
         }
     }
-}
-@each $gap in $h-gaps {
-    @include h-gap($gap);
-}
-@each $gap in $v-gaps {
-    @include v-gap($gap);
 }
 @each $mb in $mbs {
     @include mb-x($mb);
+}
+@each $mr in $mrs {
+    @include mr-x($mr);
 }
 
 .pt-100 {
@@ -69,6 +60,7 @@
 .inline-list {
     & > li {
         display: inline-block;
+        margin-right: 24px;
     }
 }
 
@@ -85,6 +77,8 @@
         & > * {
             width: 100% !important;
             flex-basis: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
         }
     }
 }
