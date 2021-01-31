@@ -6,8 +6,6 @@ body {
   margin: 0;
   color: #fff;
   position: relative;
-  width: 414px;
-  width: 1440px;
   background: #08020d;
 }
 
@@ -38,19 +36,11 @@ ul {
     padding-left: 20px;
   }
 }
-/* roboto-regular -  latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
-}
-/* roboto-700 - latin_cyrillic */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
+  src: url(../fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 h1,
 h2,
@@ -436,6 +426,7 @@ a {
   }
 }
 .btn {
+  font-family: Roboto, sans-serif;
   border: none;
   box-sizing: border-box;
   border-radius: 5px;
@@ -495,15 +486,19 @@ a {
 }
 
 .input-clear {
+  font-family: Roboto, sans-serif;
   border: 2px solid #cacaca;
   box-sizing: border-box;
   border-radius: 3px;
   background: transparent;
-  padding: 15px 22px;
+  padding: 15px 20px 14px;
   color: inherit;
   font-size: 14px;
   width: 100%;
   flex: 1 1;
+}
+.input-clear::placeholder {
+  color: #fff;
 }
 
 .news-post {
