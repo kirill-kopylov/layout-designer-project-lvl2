@@ -1,5 +1,15 @@
 #page-app {
     .iphone-img {
-        margin-bottom: -44px;
+        margin-bottom: -7px;
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: $mobile-breakpoint) {
+    #page-app {
+        .iphone-img {
+            margin-left: 0;
+        }
     }
 }

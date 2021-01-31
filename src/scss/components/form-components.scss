@@ -34,8 +34,8 @@
     }
     &-download {
         text-transform: none;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 20px 42px 19px;
+        font-size: 12.6px;
     }
     img {
         width: 20px;
@@ -69,10 +69,4 @@
     font-size: 14px;
     width: 100%;
     flex: 1 1;
-}
-
-.separator {
-    height: 1px;
-    background: #fff;
-    margin: 37px 0 40px;
 }

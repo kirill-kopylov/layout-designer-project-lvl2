@@ -1,21 +1,21 @@
 @mixin mb-x($x) {
     .mb-#{$x} {
-        margin-bottom: #{$x}px;
+        margin-bottom: #{$x}px !important;
     }
     .ch-mb-#{$x} {
         & > * {
-            margin-bottom: #{$x}px;
+            margin-bottom: #{$x}px !important;
         }
     }
 }
 @mixin mr-x($x) {
     .mr-#{$x} {
-        margin-right: #{$x}px;
+        margin-right: #{$x}px !important;
     }
-    
+
     .ch-mr-#{$x} {
         & > * {
-            margin-right: #{$x}px;
+            margin-right: #{$x}px !important;
         }
     }
 }
