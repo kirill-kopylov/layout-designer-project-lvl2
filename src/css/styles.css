@@ -6,8 +6,6 @@ body {
   margin: 0;
   color: #fff;
   position: relative;
-  width: 414px;
-  width: 1440px;
 }
 
 img {
@@ -152,7 +150,8 @@ a {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 17.5px;
+    letter-spacing: 0.3px;
   }
 
   h3 {
@@ -167,12 +166,12 @@ a {
   margin-bottom: 100px;
 }
 
-.mb-57 {
-  margin-bottom: 57px;
+.mb-64 {
+  margin-bottom: 64px;
 }
 
-.ch-mb-57 > * {
-  margin-bottom: 57px;
+.ch-mb-64 > * {
+  margin-bottom: 64px;
 }
 
 .mb-50 {
@@ -521,11 +520,7 @@ a {
     margin-top: 32px;
   }
   .news-post p {
-    margin: 6px 0 24px;
-  }
-  .news-post .btn {
-    font-size: 12px;
-    padding: 19px 31px;
+    margin: 6px 0 12px;
   }
 }
 .song-item {
