@@ -6,6 +6,8 @@ body {
   margin: 0;
   color: #fff;
   position: relative;
+  width: 414px;
+  width: 1440px;
   background: #08020d;
 }
 
@@ -680,7 +682,7 @@ footer .block-title {
     padding-top: 248px;
   }
   .main-banner p {
-    margin: revert;
+    margin: 16px 0 17px;
   }
 }
 #page-app .iphone-img {
