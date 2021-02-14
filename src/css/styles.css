@@ -270,6 +270,18 @@ a {
   padding-bottom: 100px;
 }
 
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pb-200 {
+  padding-bottom: 200px;
+}
+
+.pt-250 {
+  padding-top: 250px;
+}
+
 .fg-1 {
   flex-grow: 1;
 }
@@ -318,6 +330,14 @@ a {
     flex-basis: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+
+  .pt-sm-255 {
+    padding-top: 255px;
+  }
+
+  .pt-sm-250 {
+    padding-top: 250px;
   }
 }
 .grid {
@@ -458,9 +478,6 @@ a {
   width: 200px;
   justify-content: start;
 }
-.btn-full {
-  width: 100%;
-}
 .btn-download {
   text-transform: none;
   padding: 20px 42px 19px;
@@ -588,10 +605,8 @@ a {
 }
 .artist-banner {
   background: url("../images/Morten Harket.png") center/cover;
-  padding-top: 248px;
-  padding-bottom: 201px;
 }
-.artist-banner p {
+.artist-banner .subs-count {
   margin: 17px 0 48px;
 }
 
@@ -663,9 +678,6 @@ footer .block-title {
 
 .main-banner {
   background: url("../images/banner.png") center/cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
 }
 .main-banner p {
   margin: 32px 0 17px;
@@ -676,9 +688,6 @@ footer .block-title {
 }
 
 @media (max-width: 640px) {
-  .main-banner {
-    padding-top: 248px;
-  }
   .main-banner p {
     margin: 16px 0 17px;
   }

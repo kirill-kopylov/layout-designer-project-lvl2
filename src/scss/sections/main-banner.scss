@@ -1,8 +1,5 @@
 .main-banner {
     background: url("../images/banner.png") center/cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
     p {
         margin: 32px 0 17px;
     }
@@ -14,9 +11,8 @@
 
 @media (max-width: $mobile-breakpoint) {
     .main-banner {
-        padding-top: 248px;
         p {
             margin: 16px 0 17px;
         }
-    }
+    } 
 }
