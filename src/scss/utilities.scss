@@ -1,21 +1,24 @@
+.m-revert {
+    margin: revert;
+}
 @mixin mb-x($x) {
     .mb-#{$x} {
-        margin-bottom: #{$x}px !important;
+        margin-bottom: #{$x}px;
     }
     .ch-mb-#{$x} {
         & > * {
-            margin-bottom: #{$x}px !important;
+            margin-bottom: #{$x}px;
         }
     }
 }
 @mixin mr-x($x) {
     .mr-#{$x} {
-        margin-right: #{$x}px !important;
+        margin-right: #{$x}px;
     }
 
     .ch-mr-#{$x} {
         & > * {
-            margin-right: #{$x}px !important;
+            margin-right: #{$x}px;
         }
     }
 }
@@ -24,6 +27,13 @@
 }
 @each $mr in $mrs {
     @include mr-x($mr);
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+.mt-15 {
+    margin-top: 15px;
 }
 
 .pt-100 {
@@ -41,6 +51,13 @@
 .pt-250 {
     padding-top: 250px;
 }
+
+.pt-3rem {
+    padding-top: 3rem;
+}
+.pb-2rem {
+    padding-bottom: 2rem;
+}
 .fg-1 {
     flex-grow: 1;
 }
@@ -51,6 +68,9 @@
     & > * {
         flex: 1 1;
     }
+}
+.d-ib {
+    display: inline-block;
 }
 .flex-wrap {
     flex-wrap: wrap;
@@ -65,11 +85,13 @@
 .j-sb {
     justify-content: space-between;
 }
+.j-c {
+    justify-content: center;
+}
 
 .inline-list {
     & > li {
         display: inline-block;
-        margin-right: 24px;
     }
 }
 
@@ -81,21 +103,35 @@
     display: flex;
 }
 
+.l-h-1 {
+    line-height: 1;
+}
+.va-sup {
+    vertical-align: super;
+}
+
+.w-100 {
+    width: 100%;
+}
+.min-w-100 {
+    min-width: 100%;
+}
+
 @media (max-width: $mobile-breakpoint) {
     .full-on-sm {
         & > * {
-            width: 100% !important;
-            flex-basis: 100% !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
+            width: 100%;
+            flex-basis: 100%;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 
-    .pt-sm-255 {
-        padding-top: 255px;
+    .pt-sm-0 {
+        padding-top: 0;
     }
 
-    .pt-sm-250 {
-        padding-top: 250px;
+    .mr-sm-0 {
+        margin-right: 0;
     }
 }

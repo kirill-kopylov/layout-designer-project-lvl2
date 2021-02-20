@@ -8,29 +8,36 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
     color: #ffffff;
-    font-weight: normal;
     text-transform: uppercase;
     line-height: 150%;
-    margin: 0;
+    margin-top: 0;
 }
 
-h1 {
+h1,
+.h2 {
     font-size: 60px;
     font-weight: bold;
 }
 
-h2 {
+h2,
+.h2 {
     font-size: 38px;
     font-weight: bold;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 24px;
 }
 
-h4 {
+h4,
+.h4 {
     font-size: 18px;
 }
 
@@ -95,14 +102,16 @@ a {
 }
 
 @media (max-width: $mobile-breakpoint) {
-    h1 {
+    h1,
+    .h1 {
         font-size: 30px;
     }
-    h2 {
-        font-size: 17.5px;
-        letter-spacing: 0.3px;
+    h2,
+    .h2 {
+        font-size: 18px;
     }
-    h3 {
+    h3,
+    .h3 {
         font-size: 16px;
     }
 }

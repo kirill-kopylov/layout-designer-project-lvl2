@@ -15,10 +15,10 @@
         <img src="./images/logo.svg" class="logo-img" alt="">
         MUSIC BOX
       </a>
-      <ul class="inline-list full-on-sm">
+      <ul class="inline-list full-on-sm ch-mr-24">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Каталог</a></li>
-        <li><a href="#"><a href="artist.html">Исполнители</a></li>
+        <li><a href="artist.html">Исполнители</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="search full-on-sm">
@@ -29,49 +29,49 @@
   <main>
     <section class="main-banner pt-200 pb-200 pt-sm-250 text-center" id="page-description">
       <div class="wrapper">
-        <h1>Онлайн музыка где угодно</h1>
+        <h1 class="mb-0 mt">Онлайн музыка где угодно</h1>
         <h2>Без ограничений</h2>
         <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-        <div class="subscribe-form"> 
+        <div class="subscribe-form">
           <form class="grid cols-2 cols-sm-1  gap-24">
             <input type="text" class="input-clear" placeholder="Имя">
             <input type="text" class="input-clear" placeholder="Email">
-            <button class="btn btn-green col-full">Получить доступ</button>
+            <input type="submit" class="btn btn-green col-full" value="Получить доступ">
           </form>
         </div>
       </div>
     </section>
-    <section class="wrapper pt-100" id="page-pricing">
-      <h2 class="text-center">Формы подписки</h2>
-      <div class="subscr-cards grid grid-auto-300 gap-50">
+    <section class="wrapper pt-100 page-pricing" id="page-pricing">
+      <h2 class="text-center mb-48">Формы подписки</h2>
+      <div class="subscr-cards grid grid-auto-300 gap-50 mb-40">
         <div class="subscribe-card bg-free">
-          <h3>Бесплатная</h3>
-          <div class="cost">
-            <span class="t-size-7">0</span>
-            <span class="t-size-3">РУБ.</span>
+          <h3 class="mb-200 mt-24">Бесплатная</h3>
+          <div class="flex j-c mb-40">
+            <span class="t-size-7 l-h-1 mr-16">0</span>
+            <span class="t-size-3 va-sup">РУБ.</span>
           </div>
-          <button class="btn btn-clear">Оформить</button>
-          <div class="t-small">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки.
+          <div class="btn btn-clear w-100 mb-64">Оформить</div>
+          <div class="t-small mb-64">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки.
             Присутствует реклама</div>
         </div>
         <div class="subscribe-card bg-standart">
-          <h3>Стандартная</h3>
-          <div class="cost">
-            <span class="t-size-7">250</span>
-            <span class="t-size-3">РУБ.</span>
+          <h3 class="mb-200 mt-24">Стандартная</h3>
+          <div class="flex j-c mb-40">
+            <span class="t-size-7 l-h-1 mr-16">250</span>
+            <span class="t-size-3 va-sup">РУБ.</span>
           </div>
-          <button class="btn btn-clear">Оформить</button>
-          <div class="t-small">Оплата в месяц. Стандартный тариф<br>предоставляет доступ ко всей коллекции музыки
+          <div class="btn btn-clear w-100 mb-64">Оформить</div>
+          <div class="t-small mb-64">Оплата в месяц. Стандартный тариф<br>предоставляет доступ ко всей коллекции музыки
             в среднем качестве</div>
         </div>
         <div class="subscribe-card bg-premium">
-          <h3>Премиум</h3>
-          <div class="cost">
-            <span class="t-size-7">500</span>
-            <span class="t-size-3">РУБ.</span>
+          <h3 class="mb-200 mt-24">Премиум</h3>
+          <div class="flex j-c mb-40">
+            <span class="t-size-7 l-h-1 mr-16">500</span>
+            <span class="t-size-3 va-sup">РУБ.</span>
           </div>
-          <button class="btn btn-clear">Оформить</button>
-          <div class="t-small">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в
+          <div class="btn btn-clear w-100 mb-64">Оформить</div>
+          <div class="t-small mb-64">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в
             высоком качестве</div>
         </div>
       </div>
@@ -79,29 +79,21 @@
         тарифе вы можете скачать
         все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
     </section>
-    <section class="wrapper pt-100" id="page-news" style="
-          padding-top: 98px;
-      ">
-      <h2 class="text-center mb-50">Последние новости</h2>
-      <div class="news-posts">
-        <article class="news-post grid grid-auto-300 col-gap-50 mb-64" style="
-              margin-bottom: 57px !important;
-          ">
-          <div>
-            <img class="poster" src="./images/Music%20to%20Be%20Murdered%20By.png" alt="">
-          </div>
+    <section class="wrapper pt-100" id="page-news">
+      <h2 class="text-center mb-48">Последние новости</h2>
+      <div>
+        <article class="news-post grid grid-auto-300 col-gap-50 mb-64">
+          <img class="poster" src="./images/Music%20to%20Be%20Murdered%20By.png" alt="">
           <div class="post-info">
             <h3 class="post-title">Music to Be Murdered By</h3>
             <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас
               ждёт 20 новых треков.</p>
-            <div class="post-created t-small ch-mr-16" style="
-                  margin-top: 24px;
-              ">
+            <div class="post-created t-small ch-mr-16">
               <img src="./images/avatar.png" alt="avatar">
               <span class="text-orange">MUSIC BOX</span>
               <span class="post-date">17/01/2020</span>
             </div>
-            <button class="btn btn-clear">К альбому</button>
+            <div class="btn btn-clear d-ib t-small">К альбому</div>
           </div>
         </article>
         <article class="news-post grid grid-auto-300 col-gap-50 grid-row-reverse">
@@ -115,13 +107,13 @@
               <span class="text-orange">MUSIC BOX</span>
               <span class="post-date">24/02/2020</span>
             </div>
-            <button class="btn btn-clear">К альбому</button>
+            <div class="btn btn-clear d-ib t-small">К альбому</div>
           </div>
         </article>
       </div>
     </section>
-    <section class="wrapper pt-100 mb-100" id="page-app">
-      <h2 class="text-center mb-50">Мобильное приложение</h2>
+    <section class="wrapper pt-100 mb-100 page-app" id="page-app">
+      <h2 class="text-center mb-48">Мобильное приложение</h2>
       <div class="grid grid-auto-300">
         <div class="order-md-1">
           <p>
@@ -132,9 +124,9 @@
             С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете
             слушать музыку даже без интернета.
           </p>
-          <button class="btn btn-round btn-red btn-download">
+          <div class="btn btn-round btn-red btn-download d-ib t-small">
             Скачать
-          </button>
+          </div>
         </div>
         <div class="text-center">
           <img class="full-on-sm iphone-img" src="./images/iphone.png" alt="">
@@ -142,10 +134,10 @@
       </div>
     </section>
   </main>
-  <footer class="bg-gradient">
+  <footer class="pt-3rem pb-2rem bg-gradient">
     <section class="wrapper grid-auto-200 footer-links">
       <div>
-        <h2 class="block-title">О нас</h2>
+        <h2 class="h4 mt-15">О нас</h2>
         <ul>
           <li><a href="#">История компании</a></li>
           <li><a href="#">Карьера</a></li>
@@ -154,7 +146,7 @@
         </ul>
       </div>
       <div>
-        <h2 class="block-title">Поддержка</h2>
+        <h2 class="h4 mt-15">Поддержка</h2>
         <ul>
           <li><a href="#">База знаний</a></li>
           <li><a href="#">Тарифы</a></li>
@@ -163,7 +155,7 @@
         </ul>
       </div>
       <div>
-        <h2 class="block-title">Контакты</h2>
+        <h2 class="h4 mt-15">Контакты</h2>
         <ul>
           <li><a href="mailto:#">hello@music.box</a></li>
           <li>Russia, Moscow. Music Box studio</li>
@@ -171,7 +163,7 @@
         </ul>
       </div>
       <div>
-        <h2 class="block-title">Подписывайтесь</h2>
+        <h2 class="h4 mt-15">Подписывайтесь</h2>
         <ul class="inline-list ch-mr-20">
           <li><a href="#"><img src="./images/Google+.png" alt=""></a></li>
           <li><a href="#"><img src="./images/Twitter.png" alt=""></a></li>

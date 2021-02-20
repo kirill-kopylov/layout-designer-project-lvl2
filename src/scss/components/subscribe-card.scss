@@ -1,6 +1,6 @@
 .subscribe-card {
     border-radius: 1rem;
-    padding: 24px 24px 65px;
+    padding: 0 1.5rem;
     text-align: center;
     background-size: cover;
     &.bg-free {
@@ -11,28 +11,5 @@
     }
     &.bg-premium {
         background-image: url(../images/subscribe_3.png);
-    }
-
-    .cost {
-        margin-top: 215px;
-        vertical-align: top;
-        line-height: 0.5;
-        span {
-            vertical-align: top;
-            margin: 0 7px;
-        }
-    }
-    .btn {
-        width: 100%;
-        margin-top: 56px;
-        margin-bottom: 63px;
-        padding: 23px 30px;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: $mobile-breakpoint) {
-    .subscribe-card {
-        padding: 16px 24px 65px;
     }
 }
