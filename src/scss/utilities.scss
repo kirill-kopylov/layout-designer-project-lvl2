@@ -117,6 +117,10 @@
     min-width: 100%;
 }
 
+.fw-normal {
+    font-weight: normal;
+}
+
 @media (max-width: $mobile-breakpoint) {
     .full-on-sm {
         & > * {

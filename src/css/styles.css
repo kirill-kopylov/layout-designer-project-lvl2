@@ -733,6 +733,10 @@ a {
   min-width: 100%;
 }
 
+.fw-normal {
+  font-weight: normal;
+}
+
 @media (max-width: 640px) {
   .full-on-sm > * {
     width: 100%;
